@@ -5,5 +5,5 @@ RUN mkdir --p /usr/local/app
 WORKDIR ./usr/local/app
 RUN apt-get install -y vim
 RUN apt-get install -y git
-COPY /home/gamut/.jenkins/workspace/gamutkart1/target/gamutkart.war /usr/local/app/tomcat/webapp
+COPY /home/gamut/.jenkins/workspace/gamutkart1/target/gamutkart.war /usr/local/app/tomcat/webapps
 ENTRYPOINT /usr/local/app/tomcat/bin/sh startup.sh
